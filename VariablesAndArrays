@@ -1,0 +1,31 @@
+using System;
+
+namespace C838383
+{
+    // illustrate 4 kinds of memory variables 
+    // and variable scope and visibility
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Practice p = new Practice();
+            p.MethodPeanut();
+
+        }
+    }
+
+    class Practice
+    {
+        public int a = 5;
+        string[] pets = { "Cat", "Dog", "Tiger", "Lion" };
+
+        public void MethodPeanut() {
+            // step 1. How to ITERATE over an Array ?
+            for (int i = 0; i<pets.Length; i++)
+            {
+                Console.WriteLine(pets[i]);
+            }
+        }
+    } 
+}
